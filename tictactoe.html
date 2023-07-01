@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&family=Shadows+Into+Light&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./LogoTTT.ico"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>My TicTacToe</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Tic Tac Toe</h1>
+        <img src="LogoTTT.png" alt="logo" id="logo">
+    </div>
+
+    <table>
+        <tr> <!--tr:First child-->
+            <td class="cell" id="0"></td> <!--td:First child-->
+            <td class="cell" id="1"></td> <!--td:Second child-->
+            <td class="cell" id="2"></td> <!--td:Third child-->
+        </tr>
+        <tr> <!--tr:Second child-->
+            <td class="cell" id="3"></td> <!--td:First child-->
+            <td class="cell" id="4"></td> <!--td:Second child-->
+            <td class="cell" id="5"></td> <!--td:Third child-->
+        </tr>
+        <tr> <!--tr:Third child-->
+            <td class="cell" id="6"></td> <!--td:First child-->
+            <td class="cell" id="7"></td> <!--td:Second child-->
+            <td class="cell" id="8"></td> <!--td:Third child-->
+        </tr>
+    </table>
+
+    <div class="endgame"> <!--Annouce the winner-->
+        <div class="text"></div>
+    </div>
+
+    <button onclick="startGame()">Replay</button>
+
+   <div class="score">
+        <h1 class="human">You <br> <span id="human">0</span></h1>
+        <h1 class="robot">AI <br> <span id="robot">0</span></h1>
+   </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
